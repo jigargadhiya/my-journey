@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Jigar Gadhiya | Full Stack Architect & Microservices Specialist | AI-Augmented Systems</title>
+  <title>Jigar Gadhiya | Full Stack Architect &amp; Microservices Specialist | AI-Augmented Systems</title>
   <meta name="description" content="Professional journey and architectural presentation of Jigar Gadhiya. 12+ years building enterprise microservices, decentralized data ecosystems, cloud platforms, and AI-accelerated systems.">
-  <meta property="og:title" content="Jigar Gadhiya | Professional Journey & Architectural Resume">
+  <meta property="og:title" content="Jigar Gadhiya | Professional Journey &amp; Architectural Resume">
   <meta property="og:description" content="12+ years building enterprise microservices, Catena-X/EDC decentralized platforms, AWS cloud systems, and AI-assisted engineering.">
+  <meta property="og:image" content="assets/profile.jpg">
   <meta property="og:type" content="website">
 
   <!-- Google Fonts -->
@@ -25,7 +26,7 @@
   <header class="header">
     <div class="container nav-container">
       <a href="#top" class="brand" aria-label="Jigar Gadhiya Home">
-        <div class="brand-badge">JG</div>
+        <img src="assets/profile.jpg" alt="Jigar Gadhiya" class="brand-avatar">
         <div class="brand-info">
           <span class="brand-name">Jigar Gadhiya</span>
           <span class="brand-title">Lead Architect &amp; Full Stack</span>
@@ -55,16 +56,11 @@
           </button>
         </div>
 
-        <!-- Terminal Palette Opener -->
-        <button id="terminal-open-btn" class="btn-icon" title="Command Palette (Cmd+K / Ctrl+K)" aria-label="Open Command Palette">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
-        </button>
-
-        <!-- View Mode Toggle (Interactive Journey vs ATS Resume) -->
-        <button id="view-mode-toggle" class="btn-outline" title="Toggle ATS Resume View" aria-label="Toggle Resume View">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-          Resume View
-        </button>
+        <!-- Download Resume Button in Navbar -->
+        <a href="assets/Jigar_Gadhiya_Resume.pdf" target="_blank" class="btn-primary" style="padding: 8px 16px; font-size: 0.84rem;" download>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          Get Resume
+        </a>
 
         <!-- Theme Toggle -->
         <button id="theme-toggle" class="btn-icon" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">
@@ -75,905 +71,770 @@
   </header>
 
   <main>
-    <!-- ==========================================
-         VIEW 1: Interactive Journey Mode (Default)
-         ========================================== -->
-    <div id="journey-view-section">
-      <!-- Hero Section -->
-      <section class="hero" id="top">
-        <div class="container hero-content">
-          <div class="status-badge">
-            <span class="status-dot"></span>
-            12+ Years Experience • Open for Staff / Lead &amp; Architectural Roles
+    <!-- Hero Section -->
+    <section class="hero" id="top">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Left Column: Pitch & Actions -->
+          <div class="hero-content">
+            <div class="status-badge">
+              <span class="status-dot"></span>
+              12+ Years Experience • Open for Staff / Lead &amp; Architectural Roles
+            </div>
+
+            <h1 class="hero-title">
+              Architecting Resilient Distributed Systems.<br>
+              Leading Teams as a <span class="dynamic-role" id="dynamic-role">Full-Stack Architect</span>.<br>
+              <span class="gradient-text">Accelerating with Agentic AI.</span>
+            </h1>
+
+            <p class="hero-lede">
+              Specialized in enterprise <strong>Java / Spring Boot microservices</strong>, <strong>decentralized data ecosystems (Catena-X / Gaia-X / EDC)</strong>, zero-trust IAM (Keycloak), and cloud deployments on <strong>AWS &amp; Kubernetes</strong>. Combining deep systems engineering with modern AI coding agents for unmatched delivery velocity.
+            </p>
+
+            <div class="hero-actions">
+              <a href="assets/Jigar_Gadhiya_Resume.pdf" target="_blank" class="btn-primary" download>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                Download PDF Resume
+              </a>
+              <a href="#journey" class="btn-outline">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                Explore 12-Year Journey
+              </a>
+              <a href="https://www.linkedin.com/in/jigargadhiya/" target="_blank" rel="noopener noreferrer" class="btn-outline">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76c-.97 0-1.75-.79-1.75-1.76s.78-1.75 1.75-1.75 1.75.78 1.75 1.75-.78 1.76-1.75 1.76m1.4 9.74v-8.37H5.06v8.37h2.8z"/></svg>
+                LinkedIn
+              </a>
+              <a href="https://github.com/jigargadhiya" target="_blank" rel="noopener noreferrer" class="btn-outline">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+                GitHub
+              </a>
+            </div>
+
+            <!-- Impact Metrics Bar -->
+            <div class="metrics-grid">
+              <div class="metric-card">
+                <div class="metric-val">12+</div>
+                <div class="metric-label">Years of Engineering</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-val">40+</div>
+                <div class="metric-label">Microservices Architected</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-val">2x</div>
+                <div class="metric-label">Onsite Deliveries (Malaysia)</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-val">100+</div>
+                <div class="metric-label">Production REST APIs</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-val">99.9%</div>
+                <div class="metric-label">System Availability</div>
+              </div>
+            </div>
           </div>
 
-          <h1 class="hero-title">
-            Architecting Resilient Distributed Systems.<br>
-            Leading Teams as a <span class="dynamic-role" id="dynamic-role">Full-Stack Architect</span>.<br>
-            <span class="gradient-text">Accelerating with Agentic AI.</span>
-          </h1>
+          <!-- Right Column: Profile Presentation Card -->
+          <div class="profile-card">
+            <div class="profile-img-wrap">
+              <img src="assets/profile.jpg" alt="Jigar Gadhiya" class="profile-img">
+            </div>
+            <div class="profile-status-pill">
+              <span class="status-dot"></span>
+              Available for Senior / Lead Roles
+            </div>
+            <h2 class="profile-name">Jigar Gadhiya</h2>
+            <div class="profile-role">Lead Architect &amp; Senior Full Stack</div>
 
-          <p class="hero-lede">
-            Specialized in enterprise <strong>Java / Spring Boot microservices</strong>, <strong>decentralized data ecosystems (Catena-X / Gaia-X / EDC)</strong>, zero-trust IAM (Keycloak), and cloud deployments on <strong>AWS &amp; Kubernetes</strong>. Combining deep systems engineering with modern AI coding agents for unmatched delivery velocity.
-          </p>
-
-          <div class="hero-actions">
-            <a href="assets/Jigar_Gadhiya_Resume.pdf" target="_blank" class="btn-primary" download>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-              Download PDF Resume
-            </a>
-            <a href="#journey" class="btn-outline">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-              Explore 12-Year Journey
-            </a>
-            <a href="https://www.linkedin.com/in/jigargadhiya/" target="_blank" rel="noopener noreferrer" class="btn-outline">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76c-.97 0-1.75-.79-1.75-1.76s.78-1.75 1.75-1.75 1.75.78 1.75 1.75-.78 1.76-1.75 1.76m1.4 9.74v-8.37H5.06v8.37h2.8z"/></svg>
-              LinkedIn Profile
-            </a>
-            <a href="https://github.com/jigargadhiya" target="_blank" rel="noopener noreferrer" class="btn-outline">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
-              GitHub
-            </a>
-          </div>
-
-          <!-- Impact Metrics Bar -->
-          <div class="metrics-grid">
-            <div class="metric-card">
-              <div class="metric-val">12+</div>
-              <div class="metric-label">Years of Engineering</div>
-            </div>
-            <div class="metric-card">
-              <div class="metric-val">40+</div>
-              <div class="metric-label">Microservices Architected</div>
-            </div>
-            <div class="metric-card">
-              <div class="metric-val">2x</div>
-              <div class="metric-label">International Onsite Deliveries</div>
-            </div>
-            <div class="metric-card">
-              <div class="metric-val">100+</div>
-              <div class="metric-label">Production REST APIs</div>
-            </div>
-            <div class="metric-card">
-              <div class="metric-val">99.9%</div>
-              <div class="metric-label">Target System Availability</div>
+            <div class="profile-chips">
+              <div class="profile-chip-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                <span><strong>12+ Years</strong> in Enterprise Systems</span>
+              </div>
+              <div class="profile-chip-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                <span><strong>2x Onsite Delivery</strong> in Malaysia</span>
+              </div>
+              <div class="profile-chip-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Gujarat, India • Remote &amp; Relocation</span>
+              </div>
+              <div class="profile-chip-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+                <span>B.E. Computer Engineering (GTU)</span>
+              </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- About & Engineering Philosophy -->
-      <section id="about">
-        <div class="container">
-          <div class="section-head">
-            <span class="section-tag">Philosophy &amp; Perspectives</span>
-            <h2 class="section-title">How I Build &amp; Lead Systems</h2>
-            <p class="section-subtitle">Bridging rigorous system architecture with high-velocity engineering leadership and modern AI workflows.</p>
+    <!-- About & Engineering Philosophy -->
+    <section id="about">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">Philosophy &amp; Perspectives</span>
+          <h2 class="section-title">How I Build &amp; Lead Systems</h2>
+          <p class="section-subtitle">Bridging rigorous system architecture with high-velocity engineering leadership and modern AI workflows.</p>
+        </div>
+
+        <!-- Dual-Perspective Lens Cards -->
+        <div class="lens-container">
+          <div class="lens-card active-lens" data-lens="architecture">
+            <div class="lens-header">
+              <span class="lens-badge">Architecture &amp; Deep Tech</span>
+              <h3>For Principal Engineers &amp; CTOs</h3>
+            </div>
+            <ul class="lens-list">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Decoupled Microservices:</strong> Hexagonal domain design, contract-first API modeling, and resilient asynchronous event streaming with Kafka.</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Zero-Trust IAM:</strong> Keycloak OIDC SPI custom plugins, fine-grained access control, and Self-Sovereign Identity (SSI, DID-web, Verifiable Credentials).</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Observability &amp; Scale:</strong> Multi-tiered Redis caching, AWS OpenSearch dynamic autocomplete, and distributed log tracing with Grafana &amp; Loki.</span>
+              </li>
+            </ul>
           </div>
 
-          <!-- Dual-Perspective Lens Cards -->
-          <div class="lens-container">
-            <div class="lens-card active-lens" data-lens="architecture">
-              <div class="lens-header">
-                <span class="lens-badge">Architecture &amp; Deep Tech</span>
-                <h3>For Principal Engineers &amp; CTOs</h3>
+          <div class="lens-card" data-lens="leadership">
+            <div class="lens-header">
+              <span class="lens-badge">Leadership &amp; Business Delivery</span>
+              <h3>For VPs of Engineering &amp; Hiring Managers</h3>
+            </div>
+            <ul class="lens-list">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Predictable Global Delivery:</strong> Proven track record leading sprint planning, stakeholder alignment, and 2x onsite international delivery in Malaysia.</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Legacy Risk De-escalation:</strong> Safely modernized monolithic telecom &amp; HR systems (Struts/EJB to Spring Cloud) with zero data loss or downtime.</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>AI-Powered Team Multiplier:</strong> Incorporating Antigravity, Claude Code, and n8n workflows to multiply engineering velocity without cutting architectural corners.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 4 Core Tenets -->
+        <div class="philosophy-grid">
+          <div class="tenet-card">
+            <span class="tenet-icon">🛡️</span>
+            <h3 class="tenet-title">Decouple &amp; Defend</h3>
+            <p class="tenet-desc">Clear service boundaries and zero-trust authentication protect production systems from cascading failures and security holes.</p>
+          </div>
+          <div class="tenet-card">
+            <span class="tenet-icon">📊</span>
+            <h3 class="tenet-title">Observable by Default</h3>
+            <p class="tenet-desc">If telemetry, distributed logs, and metrics aren't captured in Grafana/Loki, it isn't ready for production traffic.</p>
+          </div>
+          <div class="tenet-card">
+            <span class="tenet-icon">🔄</span>
+            <h3 class="tenet-title">Pragmatic Modernization</h3>
+            <p class="tenet-desc">Transforming legacy monoliths into cloud-native microservices through surgical, zero-downtime database and API migrations.</p>
+          </div>
+          <div class="tenet-card">
+            <span class="tenet-icon">⚡</span>
+            <h3 class="tenet-title">AI-Augmented Velocity</h3>
+            <p class="tenet-desc">AI tools and automation agents accelerate boilerplate, tests, and exploration; experienced engineers govern system design.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Career Journey (Timeline) -->
+    <section id="journey">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">Interactive Chronology</span>
+          <h2 class="section-title">The 12-Year Engineering Journey</h2>
+          <p class="section-subtitle">From high-throughput telecom backends and enterprise SaaS to decentralized dataspaces and AI-driven platforms.</p>
+        </div>
+
+        <div class="timeline">
+          <!-- Role 1: SmartSense Solutions -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-top">
+                <div>
+                  <h3 class="role-title">Sr. Software Engineer &amp; Technical Lead</h3>
+                  <div class="company-name">SmartSense Solutions <span>• Ahmedabad, India</span></div>
+                </div>
+                <span class="timeline-period">Jun 2022 – Present</span>
               </div>
-              <ul class="lens-list">
-                <li>
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                  <span><strong>Decoupled Microservices:</strong> Hexagonal domain design, contract-first API modeling, and resilient asynchronous event streaming with Kafka.</span>
+              <p class="timeline-summary">
+                Leading architecture and development for decentralized data ecosystems, automotive supply chain compliance (Catena-X / Gaia-X), and zero-trust identity infrastructures.
+              </p>
+              <ul class="timeline-highlights">
+                <li class="lens-highlight-tech">
+                  <strong>Decentralized Data Integration:</strong> Implemented Eclipse Dataspace Components (EDC) to achieve sovereign data exchange in decentralized architectures.
                 </li>
-                <li>
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                  <span><strong>Zero-Trust IAM:</strong> Keycloak OIDC SPI custom plugins, fine-grained access control, and Self-Sovereign Identity (SSI, DID-web, Verifiable Credentials).</span>
+                <li class="lens-highlight-tech">
+                  <strong>Catena-X &amp; Gaia-X Standards:</strong> Built CES service catalog offerings adhering to Gaia-X compliance and Self-Sovereign Identity (SSI) with Verifiable Credentials &amp; DID-web.
                 </li>
-                <li>
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                  <span><strong>Observability &amp; Scale:</strong> Multi-tiered Redis caching, AWS OpenSearch dynamic autocomplete, and distributed log tracing with Grafana &amp; Loki.</span>
+                <li class="lens-highlight-tech">
+                  <strong>Identity &amp; Security Engineering:</strong> Developed custom Keycloak SPI plugins for complex authentication flows, custom user federations, and session management.
+                </li>
+                <li class="lens-highlight-lead">
+                  <strong>Delivery &amp; Client Communication:</strong> Led weekly client syncs, technical demonstrations, sprint deliverables, and architectural feasibility reviews across multi-tenant teams.
+                </li>
+                <li class="lens-highlight-lead">
+                  <strong>Event-Driven Infrastructure:</strong> Architected Kafka messaging broker to distribute centralized notifications, transactional emails, and event streams across microservices.
                 </li>
               </ul>
-            </div>
-
-            <div class="lens-card" data-lens="leadership">
-              <div class="lens-header">
-                <span class="lens-badge">Leadership &amp; Business Delivery</span>
-                <h3>For VPs of Engineering &amp; Hiring Managers</h3>
+              <div class="tag-cloud">
+                <span class="tech-tag">Spring Boot</span>
+                <span class="tech-tag">Catena-X</span>
+                <span class="tech-tag">EDC</span>
+                <span class="tech-tag">Gaia-X</span>
+                <span class="tech-tag">SSI / DID</span>
+                <span class="tech-tag">Keycloak SPI</span>
+                <span class="tech-tag">Kafka</span>
+                <span class="tech-tag">Kubernetes</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">Grafana / Loki</span>
               </div>
-              <ul class="lens-list">
-                <li>
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                  <span><strong>Predictable Global Delivery:</strong> Proven track record leading sprint planning, stakeholder alignment, and 2x onsite international delivery in Malaysia.</span>
+            </div>
+          </div>
+
+          <!-- Role 2: Encora Inc. -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-top">
+                <div>
+                  <h3 class="role-title">Sr. Software Engineer</h3>
+                  <div class="company-name">Encora Inc. <span>• Ahmedabad, India</span></div>
+                </div>
+                <span class="timeline-period">Mar 2020 – Jun 2022</span>
+              </div>
+              <p class="timeline-summary">
+                Engineered scalable cloud backend microservices, real-time dynamic search pipelines, and seamless frontend integrations for high-growth enterprise platforms.
+              </p>
+              <ul class="timeline-highlights">
+                <li class="lens-highlight-tech">
+                  <strong>Dynamic ElasticSearch Architecture:</strong> Integrated AWS OpenSearch/Elasticsearch for fast multi-index searching with autocomplete, fuzzy queries, and real-time syncing.
                 </li>
-                <li>
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                  <span><strong>Legacy Risk De-escalation:</strong> Safely modernized monolithic telecom &amp; HR systems (Struts/EJB to Spring Cloud) with zero data loss or downtime.</span>
+                <li class="lens-highlight-tech">
+                  <strong>Resilient Cloud Architecture:</strong> Designed Spring Boot microservices backed by AWS (S3, CloudWatch, Lambda, RDS), Redis caching, and Flyway database migrations.
                 </li>
-                <li>
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                  <span><strong>AI-Powered Team Multiplier:</strong> Incorporating Antigravity, Claude Code, and n8n workflows to multiply engineering velocity without cutting architectural corners.</span>
+                <li class="lens-highlight-lead">
+                  <strong>Sprint Planning &amp; Team Leadership:</strong> Drove technical estimations, sprint execution, code quality standards, and PR reviews as the senior engineering authority.
+                </li>
+                <li class="lens-highlight-lead">
+                  <strong>Production Releases:</strong> Partnered with security and infrastructure teams to ensure seamless zero-downtime production rollouts and SOC2/security compliance.
                 </li>
               </ul>
+              <div class="tag-cloud">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Spring Boot</span>
+                <span class="tech-tag">Angular</span>
+                <span class="tech-tag">AWS OpenSearch</span>
+                <span class="tech-tag">AWS Lambda</span>
+                <span class="tech-tag">Redis</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">Jenkins</span>
+              </div>
             </div>
           </div>
 
-          <!-- 4 Core Tenets -->
-          <div class="philosophy-grid">
-            <div class="tenet-card">
-              <span class="tenet-icon">🛡️</span>
-              <h3 class="tenet-title">Decouple &amp; Defend</h3>
-              <p class="tenet-desc">Clear service boundaries and zero-trust authentication protect production systems from cascading failures and security holes.</p>
-            </div>
-            <div class="tenet-card">
-              <span class="tenet-icon">📊</span>
-              <h3 class="tenet-title">Observable by Default</h3>
-              <p class="tenet-desc">If telemetry, distributed logs, and metrics aren't captured in Grafana/Loki, it isn't ready for production traffic.</p>
-            </div>
-            <div class="tenet-card">
-              <span class="tenet-icon">🔄</span>
-              <h3 class="tenet-title">Pragmatic Modernization</h3>
-              <p class="tenet-desc">Transforming legacy monoliths into cloud-native microservices through surgical, zero-downtime database and API migrations.</p>
-            </div>
-            <div class="tenet-card">
-              <span class="tenet-icon">⚡</span>
-              <h3 class="tenet-title">AI-Augmented Velocity</h3>
-              <p class="tenet-desc">AI tools and automation agents accelerate boilerplate, tests, and exploration; experienced engineers govern system design.</p>
+          <!-- Role 3: Kunj Services -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-top">
+                <div>
+                  <h3 class="role-title">Software Engineer &amp; Team Lead</h3>
+                  <div class="company-name">Kunj Services Pvt. Limited <span>• Ahmedabad, India</span></div>
+                </div>
+                <span class="timeline-period">Dec 2017 – Jan 2020</span>
+              </div>
+              <p class="timeline-summary">
+                Served as engineering team lead building multi-tenant SaaS products from greenfield concept to production deployment across diverse business verticals.
+              </p>
+              <ul class="timeline-highlights">
+                <li class="lens-highlight-tech">
+                  <strong>Multi-Tenant Architecture:</strong> Designed complete database schemas and dynamic Access Control Lists (ACL) with JWT authentication for isolated tenant data security.
+                </li>
+                <li class="lens-highlight-tech">
+                  <strong>Full-Stack Engineering:</strong> Built reusable, responsive Angular component libraries communicating with performant Spring Boot REST endpoints.
+                </li>
+                <li class="lens-highlight-lead">
+                  <strong>End-to-End Ownership:</strong> Managed client requirement gathering, architectural blueprints, sprint backlog prioritization, and continuous client delivery.
+                </li>
+              </ul>
+              <div class="tag-cloud">
+                <span class="tech-tag">Spring Boot</span>
+                <span class="tech-tag">Angular 7</span>
+                <span class="tech-tag">Hibernate</span>
+                <span class="tech-tag">JWT</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">REST APIs</span>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
 
-      <!-- The Career Journey (Timeline) -->
-      <section id="journey">
-        <div class="container">
-          <div class="section-head">
-            <span class="section-tag">Interactive Chronology</span>
-            <h2 class="section-title">The 12-Year Engineering Journey</h2>
-            <p class="section-subtitle">From high-throughput telecom backends and enterprise SaaS to decentralized dataspaces and AI-driven platforms.</p>
+          <!-- Role 4: Yugtia Technologies -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-top">
+                <div>
+                  <h3 class="role-title">Software Engineer</h3>
+                  <div class="company-name">Yugtia Technologies Pvt. Limited <span>• Ahmedabad, India</span></div>
+                </div>
+                <span class="timeline-period">Apr 2017 – Dec 2017</span>
+              </div>
+              <p class="timeline-summary">
+                Transformed legacy monolithic enterprise software into a scalable, multi-client SaaS HRMS solution.
+              </p>
+              <ul class="timeline-highlights">
+                <li class="lens-highlight-tech">
+                  <strong>Monolith Migration:</strong> Extracted legacy Struts 2.0 modules into Spring REST API architecture, enabling mobile client access and modular micro-backends.
+                </li>
+                <li class="lens-highlight-tech">
+                  <strong>High-Performance Data Processing:</strong> Crafted optimized stored procedures, triggers, and cursors to handle complex payroll and attendance calculations.
+                </li>
+                <li class="lens-highlight-lead">
+                  <strong>Product Modernization:</strong> Introduced ATS (Applicant Tracking), automated alerts, and seamless integration with external background check providers.
+                </li>
+              </ul>
+              <div class="tag-cloud">
+                <span class="tech-tag">Spring</span>
+                <span class="tech-tag">Struts 2.0</span>
+                <span class="tech-tag">Hibernate</span>
+                <span class="tech-tag">MySQL Stored Procedures</span>
+                <span class="tech-tag">RESTful API</span>
+              </div>
+            </div>
           </div>
 
-          <div class="timeline">
-            <!-- Role 1: SmartSense Solutions -->
-            <div class="timeline-item">
-              <div class="timeline-dot"></div>
-              <div class="timeline-card">
-                <div class="timeline-top">
-                  <div>
-                    <h3 class="role-title">Sr. Software Engineer &amp; Technical Lead</h3>
-                    <div class="company-name">SmartSense Solutions <span>• Ahmedabad, India</span></div>
-                  </div>
-                  <span class="timeline-period">Jun 2022 – Present</span>
+          <!-- Role 5: Sterlite Tech -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-top">
+                <div>
+                  <h3 class="role-title">Jr. Software Engineer <span class="badge-onsite">2x Onsite in Malaysia</span></h3>
+                  <div class="company-name">Sterlite Tech Pvt. Limited <span>• Ahmedabad / Malaysia</span></div>
                 </div>
-                <p class="timeline-summary">
-                  Leading architecture and development for decentralized data ecosystems, automotive supply chain compliance (Catena-X / Gaia-X), and zero-trust identity infrastructures.
-                </p>
-                <ul class="timeline-highlights">
-                  <li class="lens-highlight-tech">
-                    <strong>Decentralized Data Integration:</strong> Implemented Eclipse Dataspace Components (EDC) to achieve sovereign data exchange in decentralized architectures.
-                  </li>
-                  <li class="lens-highlight-tech">
-                    <strong>Catena-X &amp; Gaia-X Standards:</strong> Built CES service catalog offerings adhering to Gaia-X compliance and Self-Sovereign Identity (SSI) with Verifiable Credentials &amp; DID-web.
-                  </li>
-                  <li class="lens-highlight-tech">
-                    <strong>Identity &amp; Security Engineering:</strong> Developed custom Keycloak SPI plugins for complex authentication flows, custom user federations, and session management.
-                  </li>
-                  <li class="lens-highlight-lead">
-                    <strong>Delivery &amp; Client Communication:</strong> Led weekly client syncs, technical demonstrations, sprint deliverables, and architectural feasibility reviews across multi-tenant teams.
-                  </li>
-                  <li class="lens-highlight-lead">
-                    <strong>Event-Driven Infrastructure:</strong> Architected Kafka messaging broker to distribute centralized notifications, transactional emails, and event streams across microservices.
-                  </li>
-                </ul>
-                <div class="tag-cloud">
-                  <span class="tech-tag">Spring Boot</span>
-                  <span class="tech-tag">Catena-X</span>
-                  <span class="tech-tag">EDC</span>
-                  <span class="tech-tag">Gaia-X</span>
-                  <span class="tech-tag">SSI / DID</span>
-                  <span class="tech-tag">Keycloak SPI</span>
-                  <span class="tech-tag">Kafka</span>
-                  <span class="tech-tag">Kubernetes</span>
-                  <span class="tech-tag">Docker</span>
-                  <span class="tech-tag">Grafana / Loki</span>
-                </div>
+                <span class="timeline-period">May 2015 – Mar 2017</span>
+              </div>
+              <p class="timeline-summary">
+                Developed mission-critical telecom billing and order orchestration engines for global telecom operators, with dedicated onsite technical leadership in Malaysia.
+              </p>
+              <ul class="timeline-highlights">
+                <li class="lens-highlight-tech">
+                  <strong>Telecom Order Orchestration:</strong> Implemented JMS buffer queuing and de-queuing with Oracle Service Bus (OSB) to ensure zero message loss under peak traffic.
+                </li>
+                <li class="lens-highlight-tech">
+                  <strong>Legacy Refactoring:</strong> Migrated complex EJB billing components to Spring framework and wrote database migration scripts for large-scale customer records.
+                </li>
+                <li class="lens-highlight-lead">
+                  <strong>International Onsite Deployment:</strong> Deployed twice to Malaysia for post-go-live hypercare, solving high-priority production incidents and handling billing execution.
+                </li>
+              </ul>
+              <div class="tag-cloud">
+                <span class="tech-tag">Core Java</span>
+                <span class="tech-tag">Oracle Service Bus</span>
+                <span class="tech-tag">JMS</span>
+                <span class="tech-tag">EJB to Spring</span>
+                <span class="tech-tag">Oracle DB</span>
+                <span class="tech-tag">Onsite Malaysia</span>
               </div>
             </div>
+          </div>
 
-            <!-- Role 2: Encora Inc. -->
-            <div class="timeline-item">
-              <div class="timeline-dot"></div>
-              <div class="timeline-card">
-                <div class="timeline-top">
-                  <div>
-                    <h3 class="role-title">Sr. Software Engineer</h3>
-                    <div class="company-name">Encora Inc. <span>• Ahmedabad, India</span></div>
-                  </div>
-                  <span class="timeline-period">Mar 2020 – Jun 2022</span>
+          <!-- Education -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-top">
+                <div>
+                  <h3 class="role-title">B.E. in Computer Engineering</h3>
+                  <div class="company-name">Gujarat Technological University <span>• Gujarat, India</span></div>
                 </div>
-                <p class="timeline-summary">
-                  Engineered scalable cloud backend microservices, real-time dynamic search pipelines, and seamless frontend integrations for high-growth enterprise platforms.
-                </p>
-                <ul class="timeline-highlights">
-                  <li class="lens-highlight-tech">
-                    <strong>Dynamic ElasticSearch Architecture:</strong> Integrated AWS OpenSearch/Elasticsearch for fast multi-index searching with autocomplete, fuzzy queries, and real-time syncing.
-                  </li>
-                  <li class="lens-highlight-tech">
-                    <strong>Resilient Cloud Architecture:</strong> Designed Spring Boot microservices backed by AWS (S3, CloudWatch, Lambda, RDS), Redis caching, and Flyway database migrations.
-                  </li>
-                  <li class="lens-highlight-lead">
-                    <strong>Sprint Planning &amp; Team Leadership:</strong> Drove technical estimations, sprint execution, code quality standards, and PR reviews as the senior engineering authority.
-                  </li>
-                  <li class="lens-highlight-lead">
-                    <strong>Production Releases:</strong> Partnered with security and infrastructure teams to ensure seamless zero-downtime production rollouts and SOC2/security compliance.
-                  </li>
-                </ul>
-                <div class="tag-cloud">
-                  <span class="tech-tag">Java</span>
-                  <span class="tech-tag">Spring Boot</span>
-                  <span class="tech-tag">Angular</span>
-                  <span class="tech-tag">AWS OpenSearch</span>
-                  <span class="tech-tag">AWS Lambda</span>
-                  <span class="tech-tag">Redis</span>
-                  <span class="tech-tag">MySQL</span>
-                  <span class="tech-tag">Docker</span>
-                  <span class="tech-tag">Jenkins</span>
-                </div>
+                <span class="timeline-period">2010 – 2014</span>
               </div>
-            </div>
-
-            <!-- Role 3: Kunj Services -->
-            <div class="timeline-item">
-              <div class="timeline-dot"></div>
-              <div class="timeline-card">
-                <div class="timeline-top">
-                  <div>
-                    <h3 class="role-title">Software Engineer &amp; Team Lead</h3>
-                    <div class="company-name">Kunj Services Pvt. Limited <span>• Ahmedabad, India</span></div>
-                  </div>
-                  <span class="timeline-period">Dec 2017 – Jan 2020</span>
-                </div>
-                <p class="timeline-summary">
-                  Served as engineering team lead building multi-tenant SaaS products from greenfield concept to production deployment across diverse business verticals.
-                </p>
-                <ul class="timeline-highlights">
-                  <li class="lens-highlight-tech">
-                    <strong>Multi-Tenant Architecture:</strong> Designed complete database schemas and dynamic Access Control Lists (ACL) with JWT authentication for isolated tenant data security.
-                  </li>
-                  <li class="lens-highlight-tech">
-                    <strong>Full-Stack Engineering:</strong> Built reusable, responsive Angular component libraries communicating with performant Spring Boot REST endpoints.
-                  </li>
-                  <li class="lens-highlight-lead">
-                    <strong>End-to-End Ownership:</strong> Managed client requirement gathering, architectural blueprints, sprint backlog prioritization, and continuous client delivery.
-                  </li>
-                </ul>
-                <div class="tag-cloud">
-                  <span class="tech-tag">Spring Boot</span>
-                  <span class="tech-tag">Angular 7</span>
-                  <span class="tech-tag">Hibernate</span>
-                  <span class="tech-tag">JWT</span>
-                  <span class="tech-tag">MySQL</span>
-                  <span class="tech-tag">REST APIs</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Role 4: Yugtia Technologies -->
-            <div class="timeline-item">
-              <div class="timeline-dot"></div>
-              <div class="timeline-card">
-                <div class="timeline-top">
-                  <div>
-                    <h3 class="role-title">Software Engineer</h3>
-                    <div class="company-name">Yugtia Technologies Pvt. Limited <span>• Ahmedabad, India</span></div>
-                  </div>
-                  <span class="timeline-period">Apr 2017 – Dec 2017</span>
-                </div>
-                <p class="timeline-summary">
-                  Transformed legacy monolithic enterprise software into a scalable, multi-client SaaS HRMS solution.
-                </p>
-                <ul class="timeline-highlights">
-                  <li class="lens-highlight-tech">
-                    <strong>Monolith Migration:</strong> Extracted legacy Struts 2.0 modules into Spring REST API architecture, enabling mobile client access and modular micro-backends.
-                  </li>
-                  <li class="lens-highlight-tech">
-                    <strong>High-Performance Data Processing:</strong> Crafted optimized stored procedures, triggers, and cursors to handle complex payroll and attendance calculations.
-                  </li>
-                  <li class="lens-highlight-lead">
-                    <strong>Product Modernization:</strong> Introduced ATS (Applicant Tracking), automated alerts, and seamless integration with external background check providers.
-                  </li>
-                </ul>
-                <div class="tag-cloud">
-                  <span class="tech-tag">Spring</span>
-                  <span class="tech-tag">Struts 2.0</span>
-                  <span class="tech-tag">Hibernate</span>
-                  <span class="tech-tag">MySQL Stored Procedures</span>
-                  <span class="tech-tag">RESTful API</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Role 5: Sterlite Tech -->
-            <div class="timeline-item">
-              <div class="timeline-dot"></div>
-              <div class="timeline-card">
-                <div class="timeline-top">
-                  <div>
-                    <h3 class="role-title">Jr. Software Engineer <span class="badge-onsite">2x Onsite in Malaysia</span></h3>
-                    <div class="company-name">Sterlite Tech Pvt. Limited <span>• Ahmedabad / Malaysia</span></div>
-                  </div>
-                  <span class="timeline-period">May 2015 – Mar 2017</span>
-                </div>
-                <p class="timeline-summary">
-                  Developed mission-critical telecom billing and order orchestration engines for global telecom operators, with dedicated onsite technical leadership in Malaysia.
-                </p>
-                <ul class="timeline-highlights">
-                  <li class="lens-highlight-tech">
-                    <strong>Telecom Order Orchestration:</strong> Implemented JMS buffer queuing and de-queuing with Oracle Service Bus (OSB) to ensure zero message loss under peak traffic.
-                  </li>
-                  <li class="lens-highlight-tech">
-                    <strong>Legacy Refactoring:</strong> Migrated complex EJB billing components to Spring framework and wrote database migration scripts for large-scale customer records.
-                  </li>
-                  <li class="lens-highlight-lead">
-                    <strong>International Onsite Deployment:</strong> Deployed twice to Malaysia for post-go-live hypercare, solving high-priority production incidents and handling billing execution.
-                  </li>
-                </ul>
-                <div class="tag-cloud">
-                  <span class="tech-tag">Core Java</span>
-                  <span class="tech-tag">Oracle Service Bus</span>
-                  <span class="tech-tag">JMS</span>
-                  <span class="tech-tag">EJB to Spring</span>
-                  <span class="tech-tag">Oracle DB</span>
-                  <span class="tech-tag">Onsite Malaysia</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Education -->
-            <div class="timeline-item">
-              <div class="timeline-dot"></div>
-              <div class="timeline-card">
-                <div class="timeline-top">
-                  <div>
-                    <h3 class="role-title">B.E. in Computer Engineering</h3>
-                    <div class="company-name">Gujarat Technological University <span>• Gujarat, India</span></div>
-                  </div>
-                  <span class="timeline-period">2010 – 2014</span>
-                </div>
-                <p class="timeline-summary">
-                  Foundational engineering degree in Computer Science: algorithms, data structures, distributed systems, operating systems, and computer networks.
-                </p>
-              </div>
+              <p class="timeline-summary">
+                Foundational engineering degree in Computer Science: algorithms, data structures, distributed systems, operating systems, and computer networks.
+              </p>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Architectural Deep Dives (Featured Case Studies) -->
-      <section id="architecture">
-        <div class="container">
-          <div class="section-head">
-            <span class="section-tag">Deep Tech &amp; Systems</span>
-            <h2 class="section-title">Architectural Case Studies</h2>
-            <p class="section-subtitle">Real-world distributed systems, decentralized dataspaces, and mission-critical platform architectures designed and delivered.</p>
-          </div>
+    <!-- Architectural Deep Dives (Featured Case Studies) -->
+    <section id="architecture">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">Deep Tech &amp; Systems</span>
+          <h2 class="section-title">Architectural Case Studies</h2>
+          <p class="section-subtitle">Real-world distributed systems, decentralized dataspaces, and mission-critical platform architectures designed and delivered.</p>
+        </div>
 
-          <div class="cases-grid">
-            <!-- Case 1 -->
-            <div class="case-card">
-              <div>
-                <span class="case-tag">Decentralized Systems &amp; Identity</span>
-                <h3 class="case-title">Catena-X Automotive Dataspace &amp; SSI Integration</h3>
-                <p class="case-problem">
-                  Automotive supply chains required sovereign, decentralized data transfer conforming to Gaia-X standards without centralized vendor lock-in.
-                </p>
-                <div class="case-architecture">[Automotive Partner] <---> [EDC Connector]
+        <div class="cases-grid">
+          <!-- Case 1 -->
+          <div class="case-card">
+            <div>
+              <span class="case-tag">Decentralized Systems &amp; Identity</span>
+              <h3 class="case-title">Catena-X Automotive Dataspace &amp; SSI Integration</h3>
+              <p class="case-problem">
+                Automotive supply chains required sovereign, decentralized data transfer conforming to Gaia-X standards without centralized vendor lock-in.
+              </p>
+              <div class="case-architecture">[Automotive Partner] &lt;---&gt; [EDC Connector]
        |                            |
        v                            v
-[Keycloak SPI (OIDC)] <---> [Catena-X Hub]
+[Keycloak SPI (OIDC)] &lt;---&gt; [Catena-X Hub]
        |                            |
-[DID-web / VC Auth]  <---> [Data Assets]</div>
-                <ul class="case-outcomes">
-                  <li>
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                    Integrated Eclipse Dataspace Components (EDC)
-                  </li>
-                  <li>
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                    Custom Keycloak SPI for zero-trust token flows
-                  </li>
-                  <li>
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                    Full Self-Sovereign Identity (Verifiable Credentials)
-                  </li>
-                </ul>
-              </div>
-              <div class="tag-cloud">
-                <span class="tech-tag">EDC</span>
-                <span class="tech-tag">Keycloak SPI</span>
-                <span class="tech-tag">Gaia-X</span>
-                <span class="tech-tag">Verifiable Credentials</span>
-              </div>
+[DID-web / VC Auth]  &lt;---&gt; [Data Assets]</div>
+              <ul class="case-outcomes">
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Integrated Eclipse Dataspace Components (EDC)
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Custom Keycloak SPI for zero-trust token flows
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Full Self-Sovereign Identity (Verifiable Credentials)
+                </li>
+              </ul>
             </div>
+            <div class="tag-cloud">
+              <span class="tech-tag">EDC</span>
+              <span class="tech-tag">Keycloak SPI</span>
+              <span class="tech-tag">Gaia-X</span>
+              <span class="tech-tag">Verifiable Credentials</span>
+            </div>
+          </div>
 
-            <!-- Case 2 -->
-            <div class="case-card">
-              <div>
-                <span class="case-tag">Search &amp; Cloud Performance</span>
-                <h3 class="case-title">High-Throughput OpenSearch &amp; Dynamic Ingestion</h3>
-                <p class="case-problem">
-                  Heavy enterprise content library required sub-100ms multi-entity search with real-time indexing, fuzzy matching, and autocomplete across millions of records.
-                </p>
-                <div class="case-architecture">[Angular UI] ---> [Spring Boot API Gateway]
+          <!-- Case 2 -->
+          <div class="case-card">
+            <div>
+              <span class="case-tag">Search &amp; Cloud Performance</span>
+              <h3 class="case-title">High-Throughput OpenSearch &amp; Dynamic Ingestion</h3>
+              <p class="case-problem">
+                Heavy enterprise content library required sub-100ms multi-entity search with real-time indexing, fuzzy matching, and autocomplete across millions of records.
+              </p>
+              <div class="case-architecture">[Angular UI] ---&gt; [Spring Boot API Gateway]
                          |
            +-------------+-------------+
            |                           |
     [Redis Cache]            [AWS OpenSearch Cluster]
 (Hot query caching)        (Multi-index autocomplete)</div>
-                <ul class="case-outcomes">
-                  <li>
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                    Sub-80ms search response latency
-                  </li>
-                  <li>
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                    Zero query degradation under high concurrency
-                  </li>
-                  <li>
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                    Automated index lifecycle &amp; failover management
-                  </li>
-                </ul>
-              </div>
-              <div class="tag-cloud">
-                <span class="tech-tag">AWS OpenSearch</span>
-                <span class="tech-tag">Redis</span>
-                <span class="tech-tag">Spring Boot</span>
-                <span class="tech-tag">Docker</span>
-              </div>
+              <ul class="case-outcomes">
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Sub-80ms search response latency
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Zero query degradation under high concurrency
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Automated index lifecycle &amp; failover management
+                </li>
+              </ul>
             </div>
+            <div class="tag-cloud">
+              <span class="tech-tag">AWS OpenSearch</span>
+              <span class="tech-tag">Redis</span>
+              <span class="tech-tag">Spring Boot</span>
+              <span class="tech-tag">Docker</span>
+            </div>
+          </div>
 
-            <!-- Case 3 -->
-            <div class="case-card">
-              <div>
-                <span class="case-tag">Monolith Migration</span>
-                <h3 class="case-title">Legacy Struts/EJB to Cloud-Native Microservices</h3>
-                <p class="case-problem">
-                  Legacy monolithic architecture in telecom/HR hindered delivery velocity, lacked mobile API support, and suffered from high maintenance bottlenecks.
-                </p>
-                <div class="case-architecture">[Monolith (Struts/EJB)]
+          <!-- Case 3 -->
+          <div class="case-card">
+            <div>
+              <span class="case-tag">Monolith Migration</span>
+              <h3 class="case-title">Legacy Struts/EJB to Cloud-Native Microservices</h3>
+              <p class="case-problem">
+                Legacy monolithic architecture in telecom/HR hindered delivery velocity, lacked mobile API support, and suffered from high maintenance bottlenecks.
+              </p>
+              <div class="case-architecture">[Monolith (Struts/EJB)]
            |
     (Strangler Fig Migration)
            v
-[Spring Cloud Services] ---> [Event Bus (Kafka)]
+[Spring Cloud Services] ---&gt; [Event Bus (Kafka)]
            |                           |
     [Postgres / MySQL]        [Distributed Tracing]</div>
-                <ul class="case-outcomes">
-                  <li>
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                    Zero-downtime migration using Strangler pattern
-                  </li>
-                  <li>
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                    Enabled multi-tenant SaaS &amp; mobile app ecosystem
-                  </li>
-                  <li>
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                    60% reduction in regression incidents
-                  </li>
-                </ul>
-              </div>
-              <div class="tag-cloud">
-                <span class="tech-tag">Strangler Pattern</span>
-                <span class="tech-tag">Spring Cloud</span>
-                <span class="tech-tag">Kafka</span>
-                <span class="tech-tag">Flyway</span>
-              </div>
+              <ul class="case-outcomes">
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Zero-downtime migration using Strangler pattern
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Enabled multi-tenant SaaS &amp; mobile app ecosystem
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  60% reduction in regression incidents
+                </li>
+              </ul>
             </div>
+            <div class="tag-cloud">
+              <span class="tech-tag">Strangler Pattern</span>
+              <span class="tech-tag">Spring Cloud</span>
+              <span class="tech-tag">Kafka</span>
+              <span class="tech-tag">Flyway</span>
+            </div>
+          </div>
 
-            <!-- Case 4 -->
-            <div class="case-card">
-              <div>
-                <span class="case-tag">Modern Engineering Workflow</span>
-                <h3 class="case-title">AI-Augmented Development &amp; Autonomous Workflows</h3>
-                <p class="case-problem">
-                  Accelerating enterprise prototype delivery, API scaffolding, and repetitive workflow automation while maintaining enterprise-grade architectural rigor.
-                </p>
-                <div class="case-architecture">[Human Architect] ---> [Antigravity / Claude Code]
+          <!-- Case 4 -->
+          <div class="case-card">
+            <div>
+              <span class="case-tag">Modern Engineering Workflow</span>
+              <h3 class="case-title">AI-Augmented Development &amp; Autonomous Workflows</h3>
+              <p class="case-problem">
+                Accelerating enterprise prototype delivery, API scaffolding, and repetitive workflow automation while maintaining enterprise-grade architectural rigor.
+              </p>
+              <div class="case-architecture">[Human Architect] ---&gt; [Antigravity / Claude Code]
          |                              |
          v                              v
 [Architecture Specs]         [Rapid Code Scaffolding]
          |                              |
-         +-------------> [n8n Automation Pipelines]</div>
-                <ul class="case-outcomes">
-                  <li>
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                    4x faster POC and boilerplate generation
-                  </li>
-                  <li>
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                    Automated integration pipelines with n8n
-                  </li>
-                  <li>
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                    High-rigor test harness with Testcontainers
-                  </li>
-                </ul>
-              </div>
-              <div class="tag-cloud">
-                <span class="tech-tag">Antigravity</span>
-                <span class="tech-tag">Claude Code</span>
-                <span class="tech-tag">n8n</span>
-                <span class="tech-tag">Testcontainers</span>
-              </div>
+         +-------------&gt; [n8n Automation Pipelines]</div>
+              <ul class="case-outcomes">
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  4x faster POC and boilerplate generation
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Automated integration pipelines with n8n
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  High-rigor test harness with Testcontainers
+                </li>
+              </ul>
+            </div>
+            <div class="tag-cloud">
+              <span class="tech-tag">Antigravity</span>
+              <span class="tech-tag">Claude Code</span>
+              <span class="tech-tag">n8n</span>
+              <span class="tech-tag">Testcontainers</span>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Interactive Skills Matrix -->
-      <section id="skills">
-        <div class="container">
-          <div class="section-head">
-            <span class="section-tag">Competencies &amp; Toolkit</span>
-            <h2 class="section-title">Technical Skills Matrix</h2>
-            <p class="section-subtitle">Battle-tested tools and frameworks utilized across 12+ years of production engineering.</p>
+    <!-- Interactive Skills Matrix -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">Competencies &amp; Toolkit</span>
+          <h2 class="section-title">Technical Skills Matrix</h2>
+          <p class="section-subtitle">Battle-tested tools and frameworks utilized across 12+ years of production engineering.</p>
+        </div>
+
+        <div class="skills-controls">
+          <div class="skills-filter">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="backend">Backend &amp; Arch</button>
+            <button class="filter-btn" data-filter="cloud">Cloud &amp; DevOps</button>
+            <button class="filter-btn" data-filter="security">Security &amp; IAM</button>
+            <button class="filter-btn" data-filter="frontend">Frontend</button>
+            <button class="filter-btn" data-filter="database">Data &amp; Search</button>
+            <button class="filter-btn" data-filter="ai">AI &amp; Automation</button>
           </div>
 
-          <div class="skills-controls">
-            <div class="skills-filter">
-              <button class="filter-btn active" data-filter="all">All</button>
-              <button class="filter-btn" data-filter="backend">Backend &amp; Arch</button>
-              <button class="filter-btn" data-filter="cloud">Cloud &amp; DevOps</button>
-              <button class="filter-btn" data-filter="security">Security &amp; IAM</button>
-              <button class="filter-btn" data-filter="frontend">Frontend</button>
-              <button class="filter-btn" data-filter="database">Data &amp; Search</button>
-              <button class="filter-btn" data-filter="ai">AI &amp; Automation</button>
-            </div>
+          <div class="skills-search">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            <input type="text" id="skills-search-input" placeholder="Search skill (e.g. Keycloak, AWS)..." aria-label="Search skills">
+          </div>
+        </div>
 
-            <div class="skills-search">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-              <input type="text" id="skills-search-input" placeholder="Search skill (e.g. Keycloak, AWS)..." aria-label="Search skills">
+        <div class="skills-grid">
+          <!-- Category: Backend -->
+          <div class="skill-category-card" data-category="backend">
+            <div class="skill-cat-header">
+              <span class="skill-cat-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                Backend &amp; Architecture
+              </span>
+            </div>
+            <div class="skill-items">
+              <span class="skill-chip featured">Java</span>
+              <span class="skill-chip featured">Spring Boot</span>
+              <span class="skill-chip featured">Microservices</span>
+              <span class="skill-chip">Spring Cloud</span>
+              <span class="skill-chip">Spring Security</span>
+              <span class="skill-chip">Spring Data JPA</span>
+              <span class="skill-chip">Hibernate</span>
+              <span class="skill-chip">RESTful APIs</span>
+              <span class="skill-chip">Python</span>
+              <span class="skill-chip">Kafka</span>
+              <span class="skill-chip">JUnit / Mockito</span>
+              <span class="skill-chip">Testcontainers</span>
             </div>
           </div>
 
-          <div class="skills-grid">
-            <!-- Category: Backend -->
-            <div class="skill-category-card" data-category="backend">
-              <div class="skill-cat-header">
-                <span class="skill-cat-title">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
-                  Backend &amp; Architecture
-                </span>
-              </div>
-              <div class="skill-items">
-                <span class="skill-chip featured">Java</span>
-                <span class="skill-chip featured">Spring Boot</span>
-                <span class="skill-chip featured">Microservices</span>
-                <span class="skill-chip">Spring Cloud</span>
-                <span class="skill-chip">Spring Security</span>
-                <span class="skill-chip">Spring Data JPA</span>
-                <span class="skill-chip">Hibernate</span>
-                <span class="skill-chip">RESTful APIs</span>
-                <span class="skill-chip">Python</span>
-                <span class="skill-chip">Kafka</span>
-                <span class="skill-chip">JUnit / Mockito</span>
-                <span class="skill-chip">Testcontainers</span>
-              </div>
+          <!-- Category: Cloud & DevOps -->
+          <div class="skill-category-card" data-category="cloud">
+            <div class="skill-cat-header">
+              <span class="skill-cat-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
+                Cloud &amp; DevOps
+              </span>
             </div>
-
-            <!-- Category: Cloud & DevOps -->
-            <div class="skill-category-card" data-category="cloud">
-              <div class="skill-cat-header">
-                <span class="skill-cat-title">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
-                  Cloud &amp; DevOps
-                </span>
-              </div>
-              <div class="skill-items">
-                <span class="skill-chip featured">AWS (EC2, S3, RDS)</span>
-                <span class="skill-chip featured">Docker</span>
-                <span class="skill-chip featured">Kubernetes</span>
-                <span class="skill-chip">AWS Lambda</span>
-                <span class="skill-chip">AWS SQS / SES</span>
-                <span class="skill-chip">CloudWatch</span>
-                <span class="skill-chip">GitHub Actions</span>
-                <span class="skill-chip">GitLab CI / Jenkins</span>
-                <span class="skill-chip">Helm / ArgoCD</span>
-                <span class="skill-chip">Grafana &amp; Loki</span>
-              </div>
+            <div class="skill-items">
+              <span class="skill-chip featured">AWS (EC2, S3, RDS)</span>
+              <span class="skill-chip featured">Docker</span>
+              <span class="skill-chip featured">Kubernetes</span>
+              <span class="skill-chip">AWS Lambda</span>
+              <span class="skill-chip">AWS SQS / SES</span>
+              <span class="skill-chip">CloudWatch</span>
+              <span class="skill-chip">GitHub Actions</span>
+              <span class="skill-chip">GitLab CI / Jenkins</span>
+              <span class="skill-chip">Helm / ArgoCD</span>
+              <span class="skill-chip">Grafana &amp; Loki</span>
             </div>
+          </div>
 
-            <!-- Category: Security & IAM -->
-            <div class="skill-category-card" data-category="security">
-              <div class="skill-cat-header">
-                <span class="skill-cat-title">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
-                  Identity &amp; Security
-                </span>
-              </div>
-              <div class="skill-items">
-                <span class="skill-chip featured">Keycloak OIDC</span>
-                <span class="skill-chip featured">Custom SPI Plugins</span>
-                <span class="skill-chip featured">Self-Sovereign Identity</span>
-                <span class="skill-chip">Verifiable Credentials</span>
-                <span class="skill-chip">DID-web</span>
-                <span class="skill-chip">OAuth 2.0 / JWT</span>
-                <span class="skill-chip">Catena-X / Gaia-X</span>
-                <span class="skill-chip">EDC Dataspace</span>
-              </div>
+          <!-- Category: Security & IAM -->
+          <div class="skill-category-card" data-category="security">
+            <div class="skill-cat-header">
+              <span class="skill-cat-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                Identity &amp; Security
+              </span>
             </div>
-
-            <!-- Category: Frontend -->
-            <div class="skill-category-card" data-category="frontend">
-              <div class="skill-cat-header">
-                <span class="skill-cat-title">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
-                  Frontend Engineering
-                </span>
-              </div>
-              <div class="skill-items">
-                <span class="skill-chip featured">Angular</span>
-                <span class="skill-chip featured">TypeScript</span>
-                <span class="skill-chip">JavaScript (ES6+)</span>
-                <span class="skill-chip">HTML5 / CSS3</span>
-                <span class="skill-chip">Responsive Web</span>
-                <span class="skill-chip">Component Architecture</span>
-              </div>
+            <div class="skill-items">
+              <span class="skill-chip featured">Keycloak OIDC</span>
+              <span class="skill-chip featured">Custom SPI Plugins</span>
+              <span class="skill-chip featured">Self-Sovereign Identity</span>
+              <span class="skill-chip">Verifiable Credentials</span>
+              <span class="skill-chip">DID-web</span>
+              <span class="skill-chip">OAuth 2.0 / JWT</span>
+              <span class="skill-chip">Catena-X / Gaia-X</span>
+              <span class="skill-chip">EDC Dataspace</span>
             </div>
+          </div>
 
-            <!-- Category: Database & Search -->
-            <div class="skill-category-card" data-category="database">
-              <div class="skill-cat-header">
-                <span class="skill-cat-title">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
-                  Databases &amp; Search
-                </span>
-              </div>
-              <div class="skill-items">
-                <span class="skill-chip featured">AWS OpenSearch</span>
-                <span class="skill-chip featured">PostgreSQL</span>
-                <span class="skill-chip featured">Redis</span>
-                <span class="skill-chip">MySQL</span>
-                <span class="skill-chip">MongoDB</span>
-                <span class="skill-chip">Neo4j</span>
-                <span class="skill-chip">Oracle DB</span>
-                <span class="skill-chip">Flyway Migrations</span>
-              </div>
+          <!-- Category: Frontend -->
+          <div class="skill-category-card" data-category="frontend">
+            <div class="skill-cat-header">
+              <span class="skill-cat-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                Frontend Engineering
+              </span>
             </div>
+            <div class="skill-items">
+              <span class="skill-chip featured">Angular</span>
+              <span class="skill-chip featured">TypeScript</span>
+              <span class="skill-chip">JavaScript (ES6+)</span>
+              <span class="skill-chip">HTML5 / CSS3</span>
+              <span class="skill-chip">Responsive Web</span>
+              <span class="skill-chip">Component Architecture</span>
+            </div>
+          </div>
 
-            <!-- Category: AI & Automation -->
-            <div class="skill-category-card" data-category="ai">
-              <div class="skill-cat-header">
-                <span class="skill-cat-title">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"></path><path d="M12 6a6 6 0 1 0 6 6 6 6 0 0 0-6-6zm0 10a4 4 0 1 1 4-4 4 4 0 0 1-4 4z"></path></svg>
-                  AI &amp; Automation
-                </span>
-              </div>
-              <div class="skill-items">
-                <span class="skill-chip featured">Antigravity</span>
-                <span class="skill-chip featured">Claude Code</span>
-                <span class="skill-chip featured">n8n Workflows</span>
-                <span class="skill-chip">AI Agent Prototyping</span>
-                <span class="skill-chip">Model Context Protocol (MCP)</span>
-                <span class="skill-chip">Automated Test Gen</span>
-              </div>
+          <!-- Category: Database & Search -->
+          <div class="skill-category-card" data-category="database">
+            <div class="skill-cat-header">
+              <span class="skill-cat-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+                Databases &amp; Search
+              </span>
+            </div>
+            <div class="skill-items">
+              <span class="skill-chip featured">AWS OpenSearch</span>
+              <span class="skill-chip featured">PostgreSQL</span>
+              <span class="skill-chip featured">Redis</span>
+              <span class="skill-chip">MySQL</span>
+              <span class="skill-chip">MongoDB</span>
+              <span class="skill-chip">Neo4j</span>
+              <span class="skill-chip">Oracle DB</span>
+              <span class="skill-chip">Flyway Migrations</span>
+            </div>
+          </div>
+
+          <!-- Category: AI & Automation -->
+          <div class="skill-category-card" data-category="ai">
+            <div class="skill-cat-header">
+              <span class="skill-cat-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"></path><path d="M12 6a6 6 0 1 0 6 6 6 6 0 0 0-6-6zm0 10a4 4 0 1 1 4-4 4 4 0 0 1-4 4z"></path></svg>
+                AI &amp; Automation
+              </span>
+            </div>
+            <div class="skill-items">
+              <span class="skill-chip featured">Antigravity</span>
+              <span class="skill-chip featured">Claude Code</span>
+              <span class="skill-chip featured">n8n Workflows</span>
+              <span class="skill-chip">AI Agent Prototyping</span>
+              <span class="skill-chip">Model Context Protocol (MCP)</span>
+              <span class="skill-chip">Automated Test Gen</span>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Contact & Connect -->
-      <section id="contact">
-        <div class="container">
-          <div class="contact-card">
-            <span class="section-tag">Let's Connect</span>
-            <h2 class="section-title">Ready to Build Something Remarkable?</h2>
-            <p class="section-subtitle" style="margin: 12px auto 0 auto;">
-              Open to technical leadership, staff engineering, and distributed systems architecture roles. Reach out via email, phone, or LinkedIn.
-            </p>
-
-            <div class="contact-links">
-              <a href="#" class="contact-pill copy-email-btn" title="Click to copy email">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                <span>jigar.gadhiya@gmail.com</span>
-              </a>
-
-              <a href="tel:+919408289411" class="contact-pill">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                <span>+91 9408289411</span>
-              </a>
-
-              <a href="https://www.linkedin.com/in/jigargadhiya/" target="_blank" rel="noopener noreferrer" class="contact-pill">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76c-.97 0-1.75-.79-1.75-1.76s.78-1.75 1.75-1.75 1.75.78 1.75 1.75-.78 1.76-1.75 1.76m1.4 9.74v-8.37H5.06v8.37h2.8z"/></svg>
-                <span>LinkedIn</span>
-              </a>
-
-              <a href="https://github.com/jigargadhiya" target="_blank" rel="noopener noreferrer" class="contact-pill">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
-                <span>GitHub</span>
-              </a>
-
-              <a href="assets/Jigar_Gadhiya_Resume.pdf" target="_blank" class="contact-pill" download>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-                <span>Resume (PDF)</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <!-- ==========================================
-         VIEW 2: Executive ATS Resume Mode (Printable)
-         ========================================== -->
-    <div id="resume-view-section">
-      <div class="container" style="padding: 100px 24px 60px 24px;">
-        <div class="resume-paper">
-          <div class="resume-header">
-            <div>
-              <h1 class="resume-name">JIGAR GADHIYA</h1>
-              <div class="resume-tagline">Full Stack Developer | Microservices Architect | AWS | AI-assisted Engineering</div>
-              <div style="font-size: 0.85rem; color: var(--text-muted); margin-top: 4px;">12+ Years Experience • Gujarat, India</div>
-            </div>
-            <div class="resume-contact">
-              <div>📧 <a href="mailto:jigar.gadhiya@gmail.com" style="color: inherit; text-decoration: none;">jigar.gadhiya@gmail.com</a></div>
-              <div>📞 +91 9408289411</div>
-              <div>🔗 <a href="https://www.linkedin.com/in/jigargadhiya/" target="_blank" style="color: inherit; text-decoration: none;">linkedin.com/in/jigargadhiya</a></div>
-              <div>🐙 <a href="https://github.com/jigargadhiya" target="_blank" style="color: inherit; text-decoration: none;">github.com/jigargadhiya</a></div>
-            </div>
-          </div>
-
-          <h2 class="resume-section-title">Professional Summary</h2>
-          <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 20px;">
-            Full-Stack developer and technical lead with 12+ years of experience building scalable backend systems, microservices architectures, and cloud-based applications. Specialized in Java / Spring Boot microservices, Angular frontend, Keycloak OIDC authentication, and AWS deployments. Pioneer in decentralized data spaces (Catena-X / Gaia-X / EDC) and integrating AI-assisted development workflows to accelerate delivery, architecture exploration, and system quality.
+    <!-- Contact & Connect -->
+    <section id="contact">
+      <div class="container">
+        <div class="contact-card">
+          <span class="section-tag">Let's Connect</span>
+          <h2 class="section-title">Ready to Build Something Remarkable?</h2>
+          <p class="section-subtitle" style="margin: 12px auto 0 auto;">
+            Open to technical leadership, staff engineering, and distributed systems architecture roles. Reach out via email, phone, or LinkedIn.
           </p>
 
-          <h2 class="resume-section-title">Core Skills</h2>
-          <div style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.8; margin-bottom: 20px;">
-            <div><strong>Backend:</strong> Java, Spring Boot, Spring Security, Spring Data JPA, Microservices, REST APIs, Python</div>
-            <div><strong>Cloud &amp; DevOps:</strong> AWS (EC2, S3, RDS, Lambda, SQS, SES, CloudWatch), Docker, Kubernetes, CI/CD, Helm, ArgoCD, Grafana, Loki</div>
-            <div><strong>Security &amp; IAM:</strong> Keycloak (Custom SPI Plugins, OIDC), Self-Sovereign Identity (SSI, DID-web, Verifiable Credentials), OAuth2, JWT</div>
-            <div><strong>Frontend:</strong> Angular, TypeScript, JavaScript, HTML5, CSS3</div>
-            <div><strong>Databases &amp; Search:</strong> AWS OpenSearch / ElasticSearch, PostgreSQL, MySQL, Redis, MongoDB, Neo4j</div>
-            <div><strong>AI &amp; Automation:</strong> Antigravity, Claude Code, n8n Automation Workflows, Model Context Protocol (MCP)</div>
-            <div><strong>Testing:</strong> JUnit, Mockito, Testcontainers, Cucumber, Selenium</div>
-          </div>
+          <div class="contact-links">
+            <a href="#" class="contact-pill copy-email-btn" title="Click to copy email">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>jigar.gadhiya@gmail.com</span>
+            </a>
 
-          <h2 class="resume-section-title">Professional Experience</h2>
+            <a href="tel:+919408289411" class="contact-pill">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>+91 9408289411</span>
+            </a>
 
-          <!-- Role 1 -->
-          <div style="margin-bottom: 20px;">
-            <div style="display: flex; justify-content: space-between; font-weight: 700; color: var(--text-primary);">
-              <div>SmartSense Solutions — Sr. Software Engineer &amp; Tech Lead</div>
-              <div>Jun 2022 – Present</div>
-            </div>
-            <ul style="padding-left: 20px; font-size: 0.9rem; color: var(--text-secondary); margin-top: 6px; line-height: 1.5;">
-              <li>Implemented Eclipse Dataspace Components (EDC) to achieve sovereign data transfer in decentralized automotive architectures (Catena-X).</li>
-              <li>Engineered custom Keycloak SPI plugins for authentication flows, user federation, session management, and gaia-x compliance.</li>
-              <li>Implemented Self-Sovereign Identity (SSI) with Verifiable Credentials and DID-web.</li>
-              <li>Architected Kafka event streaming for asynchronous notifications, mail delivery, and cross-service updates.</li>
-            </ul>
-          </div>
+            <a href="https://www.linkedin.com/in/jigargadhiya/" target="_blank" rel="noopener noreferrer" class="contact-pill">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76c-.97 0-1.75-.79-1.75-1.76s.78-1.75 1.75-1.75 1.75.78 1.75 1.75-.78 1.76-1.75 1.76m1.4 9.74v-8.37H5.06v8.37h2.8z"/></svg>
+              <span>LinkedIn</span>
+            </a>
 
-          <!-- Role 2 -->
-          <div style="margin-bottom: 20px;">
-            <div style="display: flex; justify-content: space-between; font-weight: 700; color: var(--text-primary);">
-              <div>Encora Inc. — Sr. Software Engineer</div>
-              <div>Mar 2020 – Jun 2022</div>
-            </div>
-            <ul style="padding-left: 20px; font-size: 0.9rem; color: var(--text-secondary); margin-top: 6px; line-height: 1.5;">
-              <li>Architected and developed enterprise microservices using Spring Boot, Spring Data JPA, and AWS cloud infrastructure.</li>
-              <li>Integrated AWS OpenSearch / ElasticSearch for dynamic content search with autocomplete and multi-index synchronization.</li>
-              <li>Led sprint planning, technical estimations, PR reviews, and production rollouts with cloud security teams.</li>
-            </ul>
-          </div>
+            <a href="https://github.com/jigargadhiya" target="_blank" rel="noopener noreferrer" class="contact-pill">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+              <span>GitHub</span>
+            </a>
 
-          <!-- Role 3 -->
-          <div style="margin-bottom: 20px;">
-            <div style="display: flex; justify-content: space-between; font-weight: 700; color: var(--text-primary);">
-              <div>Kunj Services Pvt. Ltd. — Software Engineer &amp; Team Lead</div>
-              <div>Dec 2017 – Jan 2020</div>
-            </div>
-            <ul style="padding-left: 20px; font-size: 0.9rem; color: var(--text-secondary); margin-top: 6px; line-height: 1.5;">
-              <li>Led team in architecting multi-tenant SaaS applications from scratch across multiple business domains.</li>
-              <li>Designed dynamic ACL permissions, JWT security, and responsive Angular frontend component libraries.</li>
-            </ul>
-          </div>
-
-          <!-- Role 4 -->
-          <div style="margin-bottom: 20px;">
-            <div style="display: flex; justify-content: space-between; font-weight: 700; color: var(--text-primary);">
-              <div>Yugtia Technologies Pvt. Ltd. — Software Engineer</div>
-              <div>Apr 2017 – Dec 2017</div>
-            </div>
-            <ul style="padding-left: 20px; font-size: 0.9rem; color: var(--text-secondary); margin-top: 6px; line-height: 1.5;">
-              <li>Transformed monolithic legacy Struts 2.0 system into a multi-client SaaS HRMS solution with modern Spring REST APIs.</li>
-            </ul>
-          </div>
-
-          <!-- Role 5 -->
-          <div style="margin-bottom: 20px;">
-            <div style="display: flex; justify-content: space-between; font-weight: 700; color: var(--text-primary);">
-              <div>Sterlite Tech Pvt. Ltd. — Jr. Software Engineer (2x Onsite in Malaysia)</div>
-              <div>May 2015 – Mar 2017</div>
-            </div>
-            <ul style="padding-left: 20px; font-size: 0.9rem; color: var(--text-secondary); margin-top: 6px; line-height: 1.5;">
-              <li>Implemented JMS queuing with Oracle Service Bus (OSB) for telecom billing and order orchestration.</li>
-              <li>Deployed onsite twice in Malaysia for mission-critical post-go-live technical hypercare and billing operations.</li>
-            </ul>
-          </div>
-
-          <h2 class="resume-section-title">Education</h2>
-          <div style="display: flex; justify-content: space-between; font-size: 0.9rem; color: var(--text-primary);">
-            <div><strong>B.E. in Computer Engineering</strong> — Gujarat Technological University</div>
-            <div>Graduated 2014</div>
-          </div>
-
-          <div style="text-align: center; margin-top: 36px;">
-            <button onclick="window.print()" class="btn-primary">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
-              Print / Save ATS Resume
-            </button>
+            <a href="assets/Jigar_Gadhiya_Resume.pdf" target="_blank" class="contact-pill" download>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <span>Resume (PDF)</span>
+            </a>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </main>
-
-  <!-- Interactive Terminal / Command Palette Modal -->
-  <div id="terminal-modal" class="terminal-modal" role="dialog" aria-modal="true" aria-label="Command Palette">
-    <div class="terminal-box">
-      <div class="terminal-top-bar">
-        <div class="terminal-dots">
-          <span class="terminal-dot red"></span>
-          <span class="terminal-dot yellow"></span>
-          <span class="terminal-dot green"></span>
-        </div>
-        <span class="terminal-title">jigar@terminal:~ (Cmd+K)</span>
-        <button id="terminal-close-btn" style="background: none; border: none; color: var(--text-muted); cursor: pointer;" aria-label="Close terminal">✕</button>
-      </div>
-
-      <div class="terminal-input-bar">
-        <span class="terminal-prompt">❯</span>
-        <input type="text" id="terminal-input" class="terminal-input" placeholder="Type a command or jump to section (journey, skills, resume, contact)..." autocomplete="off" spellcheck="false">
-      </div>
-
-      <div class="terminal-suggestions">
-        <div class="terminal-command-item" data-action="download-resume">
-          <span class="cmd-name">download-resume</span>
-          <span class="cmd-desc">Download PDF version of Resume</span>
-        </div>
-        <div class="terminal-command-item" data-action="goto-journey">
-          <span class="cmd-name">journey</span>
-          <span class="cmd-desc">Jump to 12-Year Interactive Timeline</span>
-        </div>
-        <div class="terminal-command-item" data-action="goto-cases">
-          <span class="cmd-name">architecture</span>
-          <span class="cmd-desc">View Distributed System Case Studies</span>
-        </div>
-        <div class="terminal-command-item" data-action="goto-skills">
-          <span class="cmd-name">skills</span>
-          <span class="cmd-desc">Open Skills &amp; Technology Matrix</span>
-        </div>
-        <div class="terminal-command-item" data-action="copy-email">
-          <span class="cmd-name">email</span>
-          <span class="cmd-desc">Copy jigar.gadhiya@gmail.com</span>
-        </div>
-        <div class="terminal-command-item" data-action="goto-linkedin">
-          <span class="cmd-name">linkedin</span>
-          <span class="cmd-desc">Open LinkedIn Profile in new tab</span>
-        </div>
-        <div class="terminal-command-item" data-action="goto-github">
-          <span class="cmd-name">github</span>
-          <span class="cmd-desc">Open GitHub Profile in new tab</span>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <!-- Footer -->
   <footer>
     <div class="container">
-      <p>© 2026 Jigar Gadhiya. Engineered with semantic HTML5, modern CSS variables, and vanilla JavaScript. Hosted on GitHub Pages.</p>
+      <p>© 2026 Jigar Gadhiya. Engineered with modern semantic HTML5, clean CSS, and vanilla JavaScript. Hosted on GitHub Pages.</p>
     </div>
   </footer>
 

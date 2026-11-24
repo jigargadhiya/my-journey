@@ -1,6 +1,6 @@
 /**
  * Jigar Gadhiya - Interactive Professional Journey & Executive Presentation
- * Interactive Logic, Particle Canvas & Dynamic Lens Controls
+ * Clean, modern interactive presentation logic
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -8,19 +8,17 @@ document.addEventListener('DOMContentLoaded', () => {
   initBackgroundCanvas();
   initDynamicRole();
   initLensSwitcher();
-  initViewModeSwitcher();
   initSkillsFilter();
-  initTerminalPalette();
   initCopyButtons();
   initScrollSpy();
 });
 
 /* ==========================================================================
-   1. Theme Management (Dark / Light)
+   1. Theme Management (Light by default, Dark toggleable)
    ========================================================================== */
 function initTheme() {
   const themeToggle = document.getElementById('theme-toggle');
-  const savedTheme = localStorage.getItem('jg-theme') || 'dark';
+  const savedTheme = localStorage.getItem('jg-theme') || 'light';
 
   document.documentElement.setAttribute('data-theme', savedTheme);
   updateThemeIcon(savedTheme);
@@ -40,8 +38,10 @@ function updateThemeIcon(theme) {
   const icon = document.getElementById('theme-icon');
   if (!icon) return;
   if (theme === 'dark') {
+    // Show sun to switch to light
     icon.innerHTML = `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>`;
   } else {
+    // Show moon to switch to dark
     icon.innerHTML = `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>`;
   }
 }
@@ -98,35 +98,7 @@ function initLensSwitcher() {
 }
 
 /* ==========================================================================
-   3. View Mode Switcher (Interactive Journey vs Executive ATS Resume)
-   ========================================================================== */
-function initViewModeSwitcher() {
-  const toggleBtn = document.getElementById('view-mode-toggle');
-  const journeySection = document.getElementById('journey-view-section');
-  const resumeSection = document.getElementById('resume-view-section');
-
-  if (!toggleBtn || !journeySection || !resumeSection) return;
-
-  toggleBtn.addEventListener('click', () => {
-    const isResumeMode = resumeSection.classList.contains('active-mode');
-
-    if (isResumeMode) {
-      resumeSection.classList.remove('active-mode');
-      journeySection.classList.remove('hidden-mode');
-      toggleBtn.innerHTML = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg> Resume View`;
-      showToast('Switched to Interactive Story Mode');
-    } else {
-      resumeSection.classList.add('active-mode');
-      journeySection.classList.add('hidden-mode');
-      toggleBtn.innerHTML = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Journey Mode`;
-      showToast('Switched to Executive Resume Mode');
-    }
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
-}
-
-/* ==========================================================================
-   4. Dynamic Hero Roles Cycling
+   3. Dynamic Hero Roles Cycling
    ========================================================================== */
 function initDynamicRole() {
   const el = document.getElementById('dynamic-role');
@@ -152,7 +124,7 @@ function initDynamicRole() {
 }
 
 /* ==========================================================================
-   5. Interactive Skills Filter & Search
+   4. Interactive Skills Filter & Search
    ========================================================================== */
 function initSkillsFilter() {
   const filterBtns = document.querySelectorAll('.filter-btn');
@@ -194,103 +166,7 @@ function initSkillsFilter() {
 }
 
 /* ==========================================================================
-   6. Command Palette / Terminal Drawer (Cmd+K / Ctrl+K)
-   ========================================================================== */
-function initTerminalPalette() {
-  const modal = document.getElementById('terminal-modal');
-  const openBtn = document.getElementById('terminal-open-btn');
-  const closeBtn = document.getElementById('terminal-close-btn');
-  const input = document.getElementById('terminal-input');
-  const commands = document.querySelectorAll('.terminal-command-item');
-
-  function openTerminal() {
-    if (!modal) return;
-    modal.classList.add('open');
-    if (input) {
-      input.value = '';
-      input.focus();
-    }
-  }
-
-  function closeTerminal() {
-    if (!modal) return;
-    modal.classList.remove('open');
-  }
-
-  if (openBtn) openBtn.addEventListener('click', openTerminal);
-  if (closeBtn) closeBtn.addEventListener('click', closeTerminal);
-
-  window.addEventListener('keydown', (e) => {
-    if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
-      e.preventDefault();
-      modal.classList.contains('open') ? closeTerminal() : openTerminal();
-    }
-    if (e.key === 'Escape' && modal.classList.contains('open')) {
-      closeTerminal();
-    }
-  });
-
-  if (modal) {
-    modal.addEventListener('click', (e) => {
-      if (e.target === modal) closeTerminal();
-    });
-  }
-
-  commands.forEach(item => {
-    item.addEventListener('click', () => {
-      const action = item.dataset.action;
-      executeCommand(action);
-      closeTerminal();
-    });
-  });
-
-  if (input) {
-    input.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter') {
-        const val = input.value.trim().toLowerCase();
-        if (val === 'resume' || val === 'download') executeCommand('download-resume');
-        else if (val === 'journey') executeCommand('goto-journey');
-        else if (val === 'skills') executeCommand('goto-skills');
-        else if (val === 'contact' || val === 'email') executeCommand('copy-email');
-        else if (val === 'github') executeCommand('goto-github');
-        else if (val === 'linkedin') executeCommand('goto-linkedin');
-        else showToast(`Command "${val}" not recognized. Type "help"`);
-        closeTerminal();
-      }
-    });
-  }
-}
-
-function executeCommand(action) {
-  switch (action) {
-    case 'download-resume':
-      window.open('assets/Jigar_Gadhiya_Resume.pdf', '_blank');
-      showToast('Opening Resume PDF...');
-      break;
-    case 'goto-journey':
-      document.getElementById('journey')?.scrollIntoView({ behavior: 'smooth' });
-      break;
-    case 'goto-skills':
-      document.getElementById('skills')?.scrollIntoView({ behavior: 'smooth' });
-      break;
-    case 'goto-cases':
-      document.getElementById('architecture')?.scrollIntoView({ behavior: 'smooth' });
-      break;
-    case 'copy-email':
-      navigator.clipboard.writeText('jigar.gadhiya@gmail.com');
-      showToast('Copied jigar.gadhiya@gmail.com to clipboard!');
-      break;
-    case 'goto-linkedin':
-      window.open('https://www.linkedin.com/in/jigargadhiya/', '_blank');
-      break;
-    case 'goto-github':
-      window.open('https://github.com/jigargadhiya', '_blank');
-      break;
-  }
-}
-
-/* ==========================================================================
-   7. Copy to Clipboard & Toast
+   5. Copy to Clipboard & Toast
    ========================================================================== */
 function initCopyButtons() {
   const copyEmailBtns = document.querySelectorAll('.copy-email-btn');
@@ -320,7 +196,7 @@ function showToast(msg) {
 }
 
 /* ==========================================================================
-   8. Navigation ScrollSpy
+   6. Navigation ScrollSpy
    ========================================================================== */
 function initScrollSpy() {
   const sections = document.querySelectorAll('section[id]');
@@ -348,7 +224,7 @@ function initScrollSpy() {
 }
 
 /* ==========================================================================
-   9. Lightweight Background Mesh Canvas Animation
+   7. Lightweight Background Mesh Canvas Animation
    ========================================================================== */
 function initBackgroundCanvas() {
   const canvas = document.getElementById('bg-canvas');
@@ -357,7 +233,7 @@ function initBackgroundCanvas() {
 
   let width, height;
   let particles = [];
-  const particleCount = 42;
+  const particleCount = 38;
 
   function resize() {
     width = canvas.width = window.innerWidth;
@@ -370,8 +246,8 @@ function initBackgroundCanvas() {
     particles.push({
       x: Math.random() * width,
       y: Math.random() * height,
-      vx: (Math.random() - 0.5) * 0.4,
-      vy: (Math.random() - 0.5) * 0.4,
+      vx: (Math.random() - 0.5) * 0.35,
+      vy: (Math.random() - 0.5) * 0.35,
       radius: Math.random() * 1.5 + 1
     });
   }
@@ -379,9 +255,9 @@ function initBackgroundCanvas() {
   function render() {
     ctx.clearRect(0, 0, width, height);
 
-    const isDark = document.documentElement.getAttribute('data-theme') !== 'light';
-    const dotColor = isDark ? 'rgba(99, 102, 241, 0.4)' : 'rgba(79, 70, 229, 0.25)';
-    const lineColor = isDark ? 'rgba(99, 102, 241, 0.08)' : 'rgba(79, 70, 229, 0.06)';
+    const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+    const dotColor = isDark ? 'rgba(59, 130, 246, 0.4)' : 'rgba(37, 99, 235, 0.25)';
+    const lineColor = isDark ? 'rgba(59, 130, 246, 0.08)' : 'rgba(37, 99, 235, 0.08)';
 
     for (let i = 0; i < particles.length; i++) {
       const p = particles[i];
